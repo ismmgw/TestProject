@@ -1,0 +1,14 @@
+.tariff{
+    margin: 0 auto;
+    height: 1px;
+    width: 400px;
+}
+.tariff_into{
+    background: cadetblue;
+    margin: 0 auto;
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    top:390px;
+    border-radius: 50px;
+}

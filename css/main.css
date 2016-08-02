@@ -1,0 +1,8 @@
+body {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: #2e2e2e;
+}
+.clear {clear: both;} /*отмена обтекания*/
