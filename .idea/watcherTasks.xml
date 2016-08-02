@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="$FileName$" />
+      <option name="arguments" value="$FileName$ --pretty --out $ProjectFileDir$" />
       <option name="checkSyntaxErrors" value="false" />
       <option name="description" value="Compiles .pug and .jade files into .html files" />
       <option name="exitCodeBehavior" value="ERROR" />

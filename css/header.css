@@ -56,6 +56,8 @@ nav {
     background: #ff7800;
     color: white;
     vertical-align: middle;
+    position: relative;
+    z-index:102;
 }
 nav a{
     padding-right: 32px;
