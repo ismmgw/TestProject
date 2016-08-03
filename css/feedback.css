@@ -1,0 +1,37 @@
+.feedback {
+    margin: 0 auto;
+    padding-top:1px; /*ОШИБКА БЕЗ ПАДИНГА ВЫЛАЗИТ БЕЛАЯ ПОЛОСА WTF??????*/
+    background: #eeeeee;
+    height:600px;
+}
+.feedback_into{
+    margin: 0 auto;
+    background: #eeeeee;
+}
+.feedback a{
+    color: #ff7800;
+    text-decoration: underline;
+}
+.feedback a:hover{
+    color: #ff7800;
+    text-decoration: none;
+}
+.feedback_col {
+    margin: 5px;
+    padding: 5px;
+    width: 222px;
+    float: left;
+}
+.feedback_col img{
+
+    float: left;
+}
+.feedback_col_name {
+    text-align: left;
+}
+.feedback_col_city {
+    text-align: left;
+}
+.feedback_col_surname {
+    text-align: left;
+}

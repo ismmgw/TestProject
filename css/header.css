@@ -6,11 +6,10 @@ header {
     text-align:center;
 }
 .head_container{
-    width: 970px;
+    /*width: 970px;*/
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    /*background: orange;*/
 }
 .head_1{
     float: left;

@@ -5,4 +5,19 @@ body {
     text-align: center;
     color: #2e2e2e;
 }
+h1{
+    font-size: 48pt;
+}
+h2 {
+    font-size: 24pt;
+}
+h3{
+    font-size: 18pt;
+}
+p{
+    padding: 0px;
+}
+.container{
+    width: 970px;
+}
 .clear {clear: both;} /*отмена обтекания*/
