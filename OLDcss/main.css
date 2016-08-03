@@ -17,7 +17,16 @@ h3{
 p{
     padding: 0px;
 }
-.container{
-    width: 970px;
+.tbg{
+    background: chartreuse;
 }
+.tbg2{
+    background: darkblue;
+}
+.tbg3{
+    background: darkmagenta;
+}
+/*.container{*/
+    /*width: 970px;*/
+/*}*/
 .clear {clear: both;} /*отмена обтекания*/

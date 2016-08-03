@@ -23,15 +23,25 @@
     float: left;
 }
 .feedback_col img{
-
     float: left;
+    height: 64px;
+    width: 64px;
+    display: block;
 }
 .feedback_col_name {
+    margin-left: 70px;
     text-align: left;
 }
 .feedback_col_city {
+    margin-left: 70px;
+    text-align: left;
+    color: #888888;
+}
+.feedback_col_text{
+    float: left;
     text-align: left;
 }
-.feedback_col_surname {
+.feedback_col_text{
+    float: left;
     text-align: left;
 }
