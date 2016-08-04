@@ -29,9 +29,9 @@ p{
     padding: 10px 0px;
     font-size: 1em;
 }
-.container {
-    width: 970px;
-}
+/*.container {*/
+    /*width: 970px;*/
+/*}*/
 /*------------------------HEADER----------------------------*/
 .head_1{
     color: #ff7800;
@@ -54,6 +54,9 @@ p{
 }
 .head_4 {
     margin-top: 60px;
+}
+.head_4_text{
+    margin-left: 5px;
 }
 .head_4 a{
     color: #ff7800;
@@ -223,8 +226,8 @@ nav a:hover{
 }
 .advantage_col{
     margin: 5px;
-    padding: 5px;
-    width: 222px;
+    padding: 5px 5px 5px 10px;
+    /*text-align: left;*/
 }
 .advantage_col h3{
     height: 40px;
@@ -251,23 +254,21 @@ nav a:hover{
     /*width: 64px;*/
     /*display: block;*/
 /*}*/
-/*.feedback_col_name {*/
-    /*margin-left: 70px;*/
-    /*text-align: left;*/
-/*}*/
-/*.feedback_col_city {*/
-    /*margin-left: 70px;*/
-    /*text-align: left;*/
-    /*color: #888888;*/
-/*}*/
-/*.feedback_col_text{*/
-    /*float: left;*/
-    /*text-align: left;*/
-/*}*/
-/*.feedback_col_text{*/
-    /*float: left;*/
-    /*text-align: left;*/
-/*}*/
+.feedback_col_name {
+    font-weight: 400;
+}
+.feedback_col_city {
+    color: #888888;
+}
+.feedback_col_text{
+    margin-top: 10px;
+    padding: 0 10px;
+    background: white;
+}
+.feedback_col div.feedback_col_text:hover{
+    background: #ff7800;
+    color: white;
+}
 
 /*----------------bottom_form------------------*/
 .bottom_form{
@@ -281,9 +282,15 @@ nav a:hover{
 .bottom_form_space{
     margin-bottom: 50px;
 }
-.btn-warning{
+/*.btn-warning{*/
+    /*font-weight: 600;*/
+    /*font-size: 0.8em;*/
+/*}*/
+#bot_button {
+    color: white;
+    background: #ff9c00;
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 1.6em;
 }
 /*-------------------FOOTER---------------------*/
 footer{
@@ -297,7 +304,6 @@ footer a{
     color: #555555;
     text-decoration: underline;
 }
-
 footer a:hover{
     color: #555555;
     text-decoration: none;

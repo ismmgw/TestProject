@@ -7,7 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/jquery.css">
+    <script src="./jquery/jquery-1.12.4.js"></script>
+    <script src="./jquery/jquery-ui.js"></script>
+    <!--script(src="https://use.fontawesome.com/9558d9367c.js")-->
+    <scrip></scrip>
   </head>
+  <!--<script>-->
+  <!--$( function() {-->
+  <!--$( "#slider" ).slider();-->
+  <!--} );-->
+  <!--</script>-->
   <body>
     <header>
       <div class="container">
@@ -24,7 +35,7 @@
             <div class="head_3"><span>инвестиционный сервис</span></div>
           </div>
           <div class="col-md-4">
-            <div class="head_4"><a href="#">Войти</a><span>&nbspили&nbsp</span><a href="#">зарегистрироваться</a></div>
+            <div class="head_4"><i aria-hidden="true" class="fa fa-user"></i><span class="head_4_text"><a href="#">Войти</a><span>&nbspили&nbsp</span><a href="#">зарегистрироваться</a></span></div>
           </div>
         </div>
       </div>
@@ -36,8 +47,8 @@
           <div class="col-md-3">
             <div class="icon">
               <div class="row">
-                <div class="col-md-4"><img src="./img/people.png"></div>
-                <div class="col-md-8">
+                <div class="col-xs-4"><img src="./img/people.png"></div>
+                <div class="col-xs-8">
                   <div class="icon_text"><span class="icon_text_top">6 823</span><br><span class="icon_text_bot">инвесторов</span></div>
                 </div>
               </div>
@@ -46,24 +57,24 @@
           <div class="col-md-3">
             <div class="icon">
               <div class="row">
-                <div class="col-md-4"><img src="./img/money.png"></div>
-                <div class="col-md-8 icon_text"><span class="icon_text_top">6 823</span><br><span class="icon_text_bot">инвесторов</span></div>
+                <div class="col-xs-4"><img src="./img/money.png"></div>
+                <div class="col-xs-8 icon_text"><span class="icon_text_top">7 782 640 P</span><br><span class="icon_text_bot">инвестировано</span></div>
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="icon">
               <div class="row">
-                <div class="col-md-4"><img src="./img/stack.png"></div>
-                <div class="col-md-8 icon_text"><span class="icon_text_top">6 823</span><br><span class="icon_text_bot">инвесторов</span></div>
+                <div class="col-xs-4"><img src="./img/stack.png"></div>
+                <div class="col-xs-8 icon_text"><span class="icon_text_top">738 175 P</span><br><span class="icon_text_bot">выплачено</span></div>
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="icon">
               <div class="row">
-                <div class="col-md-4"><img src="./img/cub.png"></div>
-                <div class="col-md-8 icon_text"><span class="icon_text_top">6 823</span><br><span class="icon_text_bot">инвесторов</span></div>
+                <div class="col-xs-4"><img src="./img/cub.png"></div>
+                <div class="col-xs-8 icon_text"><span class="icon_text_top">100%</span><br><span class="icon_text_bot">выплат</span></div>
               </div>
             </div>
           </div>
@@ -90,7 +101,9 @@
               </div>
               <div class="applet_slider">
                 <div class="applet_slider_text">3500</div>
-                <div class="applet_slider_slider">слайдер здесь будет</div>
+                <div class="applet_slider_slider">
+                  <div id="slider"></div>
+                </div>
               </div>
               <div class="applet_profit_text">Ваша прибыль</div>
               <div class="applet_profit_count">1 600 Р</div>
@@ -99,7 +112,7 @@
           </div>
           <div class="col-md-4">
             <div class="applet">
-              <div class="applet_percent">8%</div>
+              <div class="applet_percent">20%</div>
               <div class="row">
                 <div class="col-md-6 applet_days_left"><img src="./img/clock.png">
                   <div class="applet_days_left_text">10 дней</div>
@@ -120,7 +133,7 @@
           </div>
           <div class="col-md-4">
             <div class="applet">
-              <div class="applet_percent">8%</div>
+              <div class="applet_percent">32%</div>
               <div class="row">
                 <div class="col-md-6 applet_days_left"><img src="./img/clock.png">
                   <div class="applet_days_left_text">10 дней</div>
@@ -181,13 +194,29 @@
           <div class="col-md-3">
             <div class="feedback_col">
               <div class="row">
-                <div class="col-md-6"><img src="./img/photo_1.png"></div>
-                <div class="col-md-6">
+                <div class="col-md-4 text-left"><img src="./img/photo_1.png"></div>
+                <div class="col-md-8 text-left">
                   <div class="feedback_col_name">Ольга Вокова</div>
                   <div class="feedback_col_city">Баранул</div>
                 </div>
               </div>
-              <div class="feedback_col_text">
+              <div class="feedback_col_text text-left">
+                <div>
+                  <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feedback_col">
+              <div class="row">
+                <div class="col-md-4 text-left"><img src="./img/photo_2.png"></div>
+                <div class="col-md-8 text-left">
+                  <div class="feedback_col_name">Ольга Вокова</div>
+                  <div class="feedback_col_city">Баранул</div>
+                </div>
+              </div>
+              <div class="feedback_col_text text-left">
                 <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
               </div>
             </div>
@@ -195,13 +224,13 @@
           <div class="col-md-3">
             <div class="feedback_col">
               <div class="row">
-                <div class="col-md-6"><img src="./img/photo_2.png"></div>
-                <div class="col-md-6">
+                <div class="col-md-4 text-left"><img src="./img/photo_3.png"></div>
+                <div class="col-md-8 text-left">
                   <div class="feedback_col_name">Ольга Вокова</div>
                   <div class="feedback_col_city">Баранул</div>
                 </div>
               </div>
-              <div class="feedback_col_text">
+              <div class="feedback_col_text text-left">
                 <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
               </div>
             </div>
@@ -209,27 +238,13 @@
           <div class="col-md-3">
             <div class="feedback_col">
               <div class="row">
-                <div class="col-md-6"><img src="./img/photo_3.png"></div>
-                <div class="col-md-6">
+                <div class="col-md-4 text-left"><img src="./img/photo_4.png"></div>
+                <div class="col-md-8 text-left">
                   <div class="feedback_col_name">Ольга Вокова</div>
                   <div class="feedback_col_city">Баранул</div>
                 </div>
               </div>
-              <div class="feedback_col_text">
-                <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="feedback_col">
-              <div class="row">
-                <div class="col-md-6"><img src="./img/photo_4.png"></div>
-                <div class="col-md-6">
-                  <div class="feedback_col_name">Ольга Вокова</div>
-                  <div class="feedback_col_city">Баранул</div>
-                </div>
-              </div>
-              <div class="feedback_col_text">
+              <div class="feedback_col_text text-left">
                 <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
               </div>
             </div>
@@ -238,34 +253,35 @@
       </div>
     </div>
     <div class="bottom_form">
-      <h2>Начни зарабатывать СЕЙЧАС
-        <div class="container">
-          <div class="bottom_form_layout">
-            <form>
-              <div class="row">
-                <div class="bottom_form_space">
-                  <div class="col-md-4">
-                    <input type="text" placeholder="Имя" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <input type="text" placeholder="Фамилия" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <input type="email" placeholder="Email" class="form-control">
-                  </div>
+      <h2>Начни зарабатывать СЕЙЧАС</h2>
+      <div class="container">
+        <div class="bottom_form_layout">
+          <form>
+            <div class="row">
+              <div class="bottom_form_space">
+                <div class="col-md-4">
+                  <input type="text" placeholder="Имя" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" placeholder="Фамилия" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <input type="email" placeholder="Email" class="form-control">
                 </div>
               </div>
-              <button type="submit" class="btn btn-warning">Зарегистрироваться</button>
-            </form>
-          </div>
+            </div>
+            <button type="submit" id="bot_button" class="btn">Зарегистрироваться</button>
+          </form>
         </div>
-      </h2>
+      </div>
     </div>
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="footer_left"><span>Trader inc.</span></div>
+            <div class="footer_left">
+              <p class="text-left">Trader inc.</p>
+            </div>
           </div>
           <div class="col-md-6">
             <div class="row">

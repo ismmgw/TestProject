@@ -16,9 +16,11 @@ html(lang="ru")
                             span инвестиционный сервис
                     .col-md-4
                         .head_4
-                            a(href="#") Войти
-                            span &nbspили&nbsp
-                            a(href="#") зарегистрироваться
+                            i.fa.fa-user(aria-hidden="true")
+                            span.head_4_text
+                                a(href="#") Войти
+                                span &nbspили&nbsp
+                                a(href="#") зарегистрироваться
             nav
                 a(href="#") О НАС
                 a(href="#") ТАРИФЫ
@@ -33,9 +35,9 @@ html(lang="ru")
                     .col-md-3
                         .icon
                             .row
-                                .col-md-4
+                                .col-xs-4
                                     img(src="./img/people.png")
-                                .col-md-8
+                                .col-xs-8
                                     .icon_text
                                         span.icon_text_top 6 823
                                         br
@@ -43,30 +45,30 @@ html(lang="ru")
                     .col-md-3
                         .icon
                             .row
-                                .col-md-4
+                                .col-xs-4
                                     img(src="./img/money.png")
-                                .col-md-8.icon_text
-                                    span.icon_text_top 6 823
+                                .col-xs-8.icon_text
+                                    span.icon_text_top 7 782 640 P
                                     br
-                                    span.icon_text_bot инвесторов
+                                    span.icon_text_bot инвестировано
                     .col-md-3
                         .icon
                             .row
-                                .col-md-4
+                                .col-xs-4
                                     img(src="./img/stack.png")
-                                .col-md-8.icon_text
-                                    span.icon_text_top 6 823
+                                .col-xs-8.icon_text
+                                    span.icon_text_top 738 175 P
                                     br
-                                    span.icon_text_bot инвесторов
+                                    span.icon_text_bot выплачено
                     .col-md-3
                         .icon
                             .row
-                                .col-md-4
+                                .col-xs-4
                                     img(src="./img/cub.png")
-                                .col-md-8.icon_text
-                                    span.icon_text_top 6 823
+                                .col-xs-8.icon_text
+                                    span.icon_text_top 100%
                                     br
-                                    span.icon_text_bot инвесторов
+                                    span.icon_text_bot выплат
         .tariff_head
             .tariff_head_into='Выбери '
                 a(href="#") тариф
@@ -86,14 +88,15 @@ html(lang="ru")
                                     .applet_days_right_bot диапазон размера вкладов
                             .applet_slider
                                 .applet_slider_text 3500
-                                .applet_slider_slider слайдер здесь будет
+                                .applet_slider_slider
+                                    div(id="slider")
                             .applet_profit_text Ваша прибыль
                             .applet_profit_count 1 600 Р
                             .applet_button
                                 a(href="#") Открыть вклад
                     .col-md-4
                         .applet
-                            .applet_percent 8%
+                            .applet_percent 20%
                             .row
                                 .col-md-6.applet_days_left
                                     img(src="./img/clock.png")
@@ -110,7 +113,7 @@ html(lang="ru")
                                 a(href="#") Открыть вклад
                     .col-md-4
                         .applet
-                            .applet_percent 8%
+                            .applet_percent 32%
                             .row
                                 .col-md-6.applet_days_left
                                     img(src="./img/clock.png")
@@ -159,63 +162,64 @@ html(lang="ru")
                     .col-md-3
                         .feedback_col
                             .row
-                                .col-md-6
+                                .col-md-4.text-left
                                     img(src="./img/photo_1.png")
-                                .col-md-6
+                                .col-md-8.text-left
                                     .feedback_col_name Ольга Вокова
                                     .feedback_col_city Баранул
-                            .feedback_col_text
-                                p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
+                            .feedback_col_text.text-left
+                                div
+                                    p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
                     .col-md-3
                         .feedback_col
                             .row
-                                .col-md-6
+                                .col-md-4.text-left
                                     img(src="./img/photo_2.png")
-                                .col-md-6
+                                .col-md-8.text-left
                                     .feedback_col_name Ольга Вокова
                                     .feedback_col_city Баранул
-                            .feedback_col_text
+                            .feedback_col_text.text-left
                                 p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
                     .col-md-3
                         .feedback_col
                             .row
-                                .col-md-6
+                                .col-md-4.text-left
                                     img(src="./img/photo_3.png")
-                                .col-md-6
+                                .col-md-8.text-left
                                     .feedback_col_name Ольга Вокова
                                     .feedback_col_city Баранул
-                            .feedback_col_text
+                            .feedback_col_text.text-left
                                 p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
                     .col-md-3
                         .feedback_col
                             .row
-                                .col-md-6
+                                .col-md-4.text-left
                                     img(src="./img/photo_4.png")
-                                .col-md-6
+                                .col-md-8.text-left
                                     .feedback_col_name Ольга Вокова
                                     .feedback_col_city Баранул
-                            .feedback_col_text
+                            .feedback_col_text.text-left
                                 p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
         .bottom_form
             h2 Начни зарабатывать СЕЙЧАС
-                .container
-                    .bottom_form_layout
-                        form
-                            .row
-                                .bottom_form_space
-                                    .col-md-4
-                                        input.form-control(type="text" placeholder="Имя")
-                                    .col-md-4
-                                        input.form-control(type="text" placeholder="Фамилия")
-                                    .col-md-4
-                                        input.form-control(type="email" placeholder="Email")
-                            button.btn.btn-warning(type="submit" ) Зарегистрироваться
+            .container
+                .bottom_form_layout
+                    form
+                        .row
+                            .bottom_form_space
+                                .col-md-4
+                                    input.form-control(type="text" placeholder="Имя")
+                                .col-md-4
+                                    input.form-control(type="text" placeholder="Фамилия")
+                                .col-md-4
+                                    input.form-control(type="email" placeholder="Email")
+                        button.btn(type="submit" id="bot_button") Зарегистрироваться
         footer
             .container
                 .row
                     .col-md-6
                         .footer_left
-                            span Trader inc.
+                            p.text-left Trader inc.
                     .col-md-6
                         .row
                             .col-md-2
