@@ -15,12 +15,16 @@ h3{
     font-size: 18pt;
 }
 p{
-    padding: 0px;
+    padding: 10px 0px;
+    font-size: 12pt;
 }
-
+.container {
+    width: 970px;
+}
+/*------------------------HEADER----------------------------*/
 .head_1{
-    font-size: 72pt;
     color: #ff7800;
+    text-align: right;
 }
 .head_2{
     font-size: 36pt;
@@ -50,6 +54,8 @@ nav {
     padding: 24px;
     background: #ff7800;
     color: white;
+    position: relative;
+    z-index: 100;
 }
 nav a{
     padding-right: 32px;
@@ -66,4 +72,208 @@ nav a:hover{
     text-decoration: none;
     background: #ffffff;
     border-radius: 5px;
+}
+/*-------------------------icon_bar-------------------------*/
+.icon_layout{
+    background: white;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    position: relative;
+    padding-bottom: 40px;
+    z-index:99;
+}
+.icon {
+    width: 210px;
+    height: 100px;
+    margin: 20px 10px;
+    padding: 20px 0px;
+}
+
+/*.icon{*/
+    /*float: left;*/
+    /*padding: 10px;*/
+    /*padding-left:30px;*/
+/*}*/
+/*.icon img{*/
+    /*float: left;*/
+/*}*/
+/*.icon_text{*/
+    /*float: left;*/
+    /*margin-left: 5px;*/
+/*}*/
+/*.icon_text_top{*/
+    /*font-size: 26pt;*/
+    /*font-weight: 600;*/
+    /*text-align:left;*/
+    /*width: 145px;*/
+/*}*/
+/*.icon_text_bot{*/
+    /*text-align:left;*/
+/*}*/
+/*-------------------------TARIFF--------------------------*/
+
+.tariff_head{
+    margin: 0 auto;
+    height: 0px;
+    width: 450px;
+}
+.tariff_head_into{
+    background: white;
+    border: 1px solid gray;
+    height: 74px;
+    width: 450px;
+    position: absolute;
+    z-index:101;
+    top:330px;
+    padding-top: 15px;
+    border-radius: 50px;
+    font-size: 24pt;
+}
+.tariff_head_into a{
+    color: #ff7800;
+    text-decoration: underline;
+}
+.tariff_head_into a:hover{
+    color: #ff7800;
+    text-decoration: none;
+}
+/*-------------------------applet_layout-------------------*/
+.applet_layout{
+    background: #cccccc;
+    padding-top: 50px;
+}
+.applet {
+    width: 300px;
+    margin: 0px 10px 15px 10px;
+    background: white;
+    border-radius: 10px;
+}
+.applet_percent {
+    font-size: 42pt;
+    font-weight: 600;
+    padding: 15px;
+}
+.applet_days_left{
+    padding-left: 20px;
+}
+.applet_days_left img{
+    float: left;
+}
+.applet_days_left_text{
+    float: left;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+.applet_days_right{
+    float: right;
+    padding-right: 20px;
+}
+.applet_days_right_top{
+}
+.applet_days_right_bot{
+    font-size: 7pt;
+    color: #555555;
+}
+.applet_slider{
+    padding: 20px;
+}
+.applet_slider_text{
+    float: left;
+}
+.applet_slider_slider{
+    float:right;
+}
+.applet_profit_text{
+    padding-top:20px;
+}
+.applet_profit_count{
+    font-size: 32pt;
+    font-weight: 600;
+    margin: 15px;
+}
+.applet_button {
+    height: 40px;
+    margin: 20px;
+    background: #ff9c00;
+    padding-top: 4px;
+    font-size: 18pt;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.applet_button a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.applet_button a:hover{
+    text-decoration: underline;
+    color: white;
+}
+/*----------------advantage-------------------*/
+.advantage{
+    /*padding-top:1px; !*ОШИБКА БЕЗ ПАДИНГА ВЫЛАЗИТ БЕЛАЯ ПОЛОСА WTF??????*!*/
+    background: #f0f0f0;
+}
+.advantage_col{
+    margin: 5px;
+    padding: 5px;
+    width: 222px;
+}
+.advantage_col h3{
+    height: 40px;
+}
+/*----------------feedback-------------------*/
+.feedback {
+    background: #f0f0f0;
+}
+.feedback a{
+    color: #ff7800;
+    text-decoration: underline;
+}
+.feedback a:hover{
+    color: #ff7800;
+    text-decoration: none;
+}
+/*.feedback_col {*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    /*width: 222px;*/
+    /*float: left;*/
+/*}*/
+/*.feedback_col img{*/
+    /*float: left;*/
+    /*height: 64px;*/
+    /*width: 64px;*/
+    /*display: block;*/
+/*}*/
+/*.feedback_col_name {*/
+    /*margin-left: 70px;*/
+    /*text-align: left;*/
+/*}*/
+/*.feedback_col_city {*/
+    /*margin-left: 70px;*/
+    /*text-align: left;*/
+    /*color: #888888;*/
+/*}*/
+/*.feedback_col_text{*/
+    /*float: left;*/
+    /*text-align: left;*/
+/*}*/
+/*.feedback_col_text{*/
+    /*float: left;*/
+    /*text-align: left;*/
+/*}*/
+
+/*----------------bottom_form------------------*/
+.bottom_form{
+    background: white;
+    padding: 10px 0px 30px 0px;
+}
+/*------------------FOOTER--------------------*/
+footer{
+    background: #f0f0f0;
+    padding: 25px 0px;
+}
+.footer_left span{
+    text-align: left;
 }
