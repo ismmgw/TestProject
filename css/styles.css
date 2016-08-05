@@ -268,21 +268,36 @@ ui-widjet-contant
 /*----------------feedback-------------------*/
 .feedback {
     background: #f0f0f0;
+    z-index: 1020;
 }
-.feedback h2{
+.feedback .feedback_h a{
+    background: #f0f0f0;
+    position: relative;
+    z-index: 1020;
+    padding: 0 0 0 20px;
+}
+.feedback .feedback_h span{
+    background: #f0f0f0;
+    position: relative;
+    z-index: 1020;
+    padding: 0 20px 0 0;
+}
+.feedback .feedback_h {
     background: #f0f0f0;
     position: relative;
     z-index: 102;
+    padding: 0px 20px;
 }
-.feedback h2:before{
+.feedback .feedback_h:before{
     content: '';
     border-bottom: 1px solid #888888;
     display: block;
     height: 0;
     width: 1060px;
     position: relative;
+    z-index: 99;
     right: -40px;
-    top: 20px;
+    top: 40px;
 }
 .feedback a{
     color: #ff7800;
@@ -309,7 +324,21 @@ ui-widjet-contant
     padding: 0 10px;
     background: white;
 }
-/*.feedback_col_text:*/
+.feedback_col_text:before{
+    content: '';
+    display: block;
+    position: relative;
+    left: 70px;
+    top: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 0 25px;
+    border-color: transparent transparent transparent #ffffff;
+}
+.feedback_col div.feedback_col_text:hover:before{
+    border-color: transparent transparent transparent #ff7800;
+}
 .feedback_col div.feedback_col_text:hover{
     background: #ff7800;
     color: white;
