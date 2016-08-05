@@ -293,10 +293,9 @@ ui-widjet-contant
     border-bottom: 1px solid #888888;
     display: block;
     height: 0;
-    width: 1060px;
+    width: 100%;
     position: relative;
     z-index: 99;
-    right: -40px;
     top: 40px;
 }
 .feedback a{
