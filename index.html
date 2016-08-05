@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>ТЕСТОВАЯ СТРАНИЦА</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ТЕСТОВАЯ СТРАНИЦА</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/jquery-ui.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <!--script(src="https://use.fontawesome.com/9558d9367c.js")-->
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="head_1">
-              <h1>TRADER</h1>
-            </div>
-          </div>
-          <div class="col-md-1">
-            <div class="head_2"><span>inc</span></div>
-          </div>
-          <div class="col-md-2">
-            <div class="head_3"><span>инвестиционный сервис</span></div>
-          </div>
-          <div class="col-md-4">
-            <div class="head_4"><i aria-hidden="true" class="fa fa-user"></i><span class="head_4_text"><a href="#">Войти</a><span>&nbspили&nbsp</span><a href="#">зарегистрироваться</a></span></div>
+        <div class="row head_row">
+          <div class="col-md-6 head_1"><a href="#"><img src="./img/logo.png"></a></div>
+          <div class="col-md-6">
+            <div class="head_4 text-right"><i aria-hidden="true" class="fa fa-user"></i><span class="head_4_text"><a href="#">Войти</a><span>&nbspили&nbsp</span><a href="#">зарегистрироваться</a></span></div>
           </div>
         </div>
       </div>
@@ -56,39 +47,31 @@
     </header>
     <div class="icon_layout">
       <div class="container">
-        <div class="row">
+        <div class="row icon">
           <div class="col-md-3">
-            <div class="icon">
-              <div class="row">
-                <div class="col-xs-4"><img src="./img/people.png"></div>
-                <div class="col-xs-8 icon_text"><span class="icon_text_top">6 823</span><br>
-                  <p class="icon_text_bot">инвесторов</p>
-                </div>
+            <div class="row">
+              <div class="col-xs-4"><i aria-hidden="true" class="fa fa-users icon_font"></i></div>
+              <div class="col-xs-8 icon_text"><span class="icon_text_top">6 823</span><br>
+                <p class="icon_text_bot">инвесторов</p>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="icon">
-              <div class="row">
-                <div class="col-xs-4"><img src="./img/money.png"></div>
-                <div class="col-xs-8 icon_text"><span class="icon_text_top">7 782 640 P</span><br><span class="icon_text_bot">инвестировано</span></div>
-              </div>
+            <div class="row">
+              <div class="col-xs-4"><i aria-hidden="true" class="fa fa-rub icon_font"></i></div>
+              <div class="col-xs-8 icon_text"><span class="icon_text_top">7 782 640 P</span><br><span class="icon_text_bot">инвестировано</span></div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="icon">
-              <div class="row">
-                <div class="col-xs-4"><img src="./img/stack.png"></div>
-                <div class="col-xs-8 icon_text"><span class="icon_text_top">738 175 P</span><br><span class="icon_text_bot">выплачено</span></div>
-              </div>
+            <div class="row">
+              <div class="col-xs-4"><i aria-hidden="true" class="fa fa-stack-overflow icon_font"></i></div>
+              <div class="col-xs-8 icon_text"><span class="icon_text_top">738 175 P</span><br><span class="icon_text_bot">выплачено</span></div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="icon">
-              <div class="row">
-                <div class="col-xs-4"><img src="./img/cub.png"></div>
-                <div class="col-xs-8 icon_text"><span class="icon_text_top">100%</span><br><span class="icon_text_bot">выплат</span></div>
-              </div>
+            <div class="row">
+              <div class="col-xs-4"><i aria-hidden="true" class="fa fa-trophy icon_font"></i></div>
+              <div class="col-xs-8 icon_text"><span class="icon_text_top">100%</span><br><span class="icon_text_bot">выплат</span></div>
             </div>
           </div>
         </div>
@@ -240,7 +223,7 @@
                 <div class="col-md-4 text-left"><img src="./img/photo_1.png"></div>
                 <div class="col-md-8 text-left">
                   <div class="feedback_col_name">Ольга Вокова</div>
-                  <div class="feedback_col_city">Баранул</div>
+                  <div class="feedback_col_city">Саратов</div>
                 </div>
               </div>
               <div class="feedback_col_text text-left">
@@ -255,7 +238,7 @@
               <div class="row">
                 <div class="col-md-4 text-left"><img src="./img/photo_2.png"></div>
                 <div class="col-md-8 text-left">
-                  <div class="feedback_col_name">Ольга Вокова</div>
+                  <div class="feedback_col_name">Олег Кочетков</div>
                   <div class="feedback_col_city">Баранул</div>
                 </div>
               </div>
@@ -269,8 +252,8 @@
               <div class="row">
                 <div class="col-md-4 text-left"><img src="./img/photo_3.png"></div>
                 <div class="col-md-8 text-left">
-                  <div class="feedback_col_name">Ольга Вокова</div>
-                  <div class="feedback_col_city">Баранул</div>
+                  <div class="feedback_col_name">Инна Невская</div>
+                  <div class="feedback_col_city">Москва</div>
                 </div>
               </div>
               <div class="feedback_col_text text-left">
@@ -283,12 +266,12 @@
               <div class="row">
                 <div class="col-md-4 text-left"><img src="./img/photo_4.png"></div>
                 <div class="col-md-8 text-left">
-                  <div class="feedback_col_name">Ольга Вокова</div>
-                  <div class="feedback_col_city">Баранул</div>
+                  <div class="feedback_col_name">Александр Загибайлов</div>
+                  <div class="feedback_col_city">Новосибирск</div>
                 </div>
               </div>
               <div class="feedback_col_text text-left">
-                <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
               </div>
             </div>
           </div>
@@ -323,7 +306,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="footer_left">
-              <p class="text-left">Trader inc.</p>
+              <p class="text-left">&copy Trader inc.</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -339,9 +322,9 @@
         </div>
       </div>
     </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
-  <script src="./js/jquery.js"></script>
-  <script src="./js/jquery-ui.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
 </html>

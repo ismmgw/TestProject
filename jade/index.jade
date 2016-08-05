@@ -5,43 +5,39 @@ html(lang="ru")
         include ./blocks/header.jade
         .icon_layout
             .container
-                .row
+                .row.icon
                     .col-md-3
-                        .icon
-                            .row
-                                .col-xs-4
-                                    img(src="./img/people.png")
-                                .col-xs-8.icon_text
-                                        span.icon_text_top 6 823
-                                        br
-                                        p.icon_text_bot инвесторов
-                    .col-md-3
-                        .icon
-                            .row
-                                .col-xs-4
-                                    img(src="./img/money.png")
-                                .col-xs-8.icon_text
-                                    span.icon_text_top 7 782 640 P
+                        .row
+                            .col-xs-4
+                                i.fa.fa-users.icon_font(aria-hidden="true")
+                            .col-xs-8.icon_text
+                                    span.icon_text_top 6 823
                                     br
-                                    span.icon_text_bot инвестировано
+                                    p.icon_text_bot инвесторов
                     .col-md-3
-                        .icon
-                            .row
-                                .col-xs-4
-                                    img(src="./img/stack.png")
-                                .col-xs-8.icon_text
-                                    span.icon_text_top 738 175 P
-                                    br
-                                    span.icon_text_bot выплачено
+                        .row
+                            .col-xs-4
+                                i.fa.fa-rub.icon_font(aria-hidden="true")
+                            .col-xs-8.icon_text
+                                span.icon_text_top 7 782 640 P
+                                br
+                                span.icon_text_bot инвестировано
                     .col-md-3
-                        .icon
-                            .row
-                                .col-xs-4
-                                    img(src="./img/cub.png")
-                                .col-xs-8.icon_text
-                                    span.icon_text_top 100%
-                                    br
-                                    span.icon_text_bot выплат
+                        .row
+                            .col-xs-4
+                                i.fa.fa-stack-overflow.icon_font(aria-hidden="true")
+                            .col-xs-8.icon_text
+                                span.icon_text_top 738 175 P
+                                br
+                                span.icon_text_bot выплачено
+                    .col-md-3
+                        .row
+                            .col-xs-4
+                                i.fa.fa-trophy.icon_font(aria-hidden="true")
+                            .col-xs-8.icon_text
+                                span.icon_text_top 100%
+                                br
+                                span.icon_text_bot выплат
         .tariff_head
             .tariff_head_into='Выбери '
                 a(href="#") тариф
@@ -164,7 +160,7 @@ html(lang="ru")
                                     img(src="./img/photo_1.png")
                                 .col-md-8.text-left
                                     .feedback_col_name Ольга Вокова
-                                    .feedback_col_city Баранул
+                                    .feedback_col_city Саратов
                             .feedback_col_text.text-left
                                 div
                                     p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
@@ -174,7 +170,7 @@ html(lang="ru")
                                 .col-md-4.text-left
                                     img(src="./img/photo_2.png")
                                 .col-md-8.text-left
-                                    .feedback_col_name Ольга Вокова
+                                    .feedback_col_name Олег Кочетков
                                     .feedback_col_city Баранул
                             .feedback_col_text.text-left
                                 p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
@@ -184,8 +180,8 @@ html(lang="ru")
                                 .col-md-4.text-left
                                     img(src="./img/photo_3.png")
                                 .col-md-8.text-left
-                                    .feedback_col_name Ольга Вокова
-                                    .feedback_col_city Баранул
+                                    .feedback_col_name Инна Невская
+                                    .feedback_col_city Москва
                             .feedback_col_text.text-left
                                 p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
                     .col-md-3
@@ -194,10 +190,10 @@ html(lang="ru")
                                 .col-md-4.text-left
                                     img(src="./img/photo_4.png")
                                 .col-md-8.text-left
-                                    .feedback_col_name Ольга Вокова
-                                    .feedback_col_city Баранул
+                                    .feedback_col_name Александр Загибайлов
+                                    .feedback_col_city Новосибирск
                             .feedback_col_text.text-left
-                                p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
+                                p Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
         .bottom_form
             h2 Начни зарабатывать СЕЙЧАС
             .container
@@ -212,13 +208,12 @@ html(lang="ru")
                                 .col-md-4
                                     input.form-control(type="email" placeholder="Email")
                         button.btn(type="submit" id="bot_button") Зарегистрироваться
-
         footer
             .container
                 .row
                     .col-md-6
                         .footer_left
-                            p.text-left Trader inc.
+                            p.text-left &copy Trader inc.
                     .col-md-6
                         .row
                             .col-md-2
@@ -233,4 +228,4 @@ html(lang="ru")
                                 a(href="#") Отзывы
                             .col-md-2
                                 a(href="#") Контакты
-    include ./blocks/script.jade
+        include ./blocks/script.jade
