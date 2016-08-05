@@ -2,33 +2,7 @@ doctype html
 html(lang="ru")
     include ./blocks/head.jade
     body
-        header
-            .container
-                .row
-                    .col-md-5
-                        .head_1
-                            h1 TRADER
-                    .col-md-1
-                        .head_2
-                            span inc
-                    .col-md-2
-                        .head_3
-                            span инвестиционный сервис
-                    .col-md-4
-                        .head_4
-                            i.fa.fa-user(aria-hidden="true")
-                            span.head_4_text
-                                a(href="#") Войти
-                                span &nbspили&nbsp
-                                a(href="#") зарегистрироваться
-            nav
-                a(href="#") О НАС
-                a(href="#") ТАРИФЫ
-                a(href="#") ПРАФИЛА
-                a(href="#") FAQ
-                a(href="#") ОТЗЫВЫ
-                a(href="#") КОНТАКТЫ
-                a(href="#") ОБРАТНАЯ СВЯЗЬ
+        include ./blocks/header.jade
         .icon_layout
             .container
                 .row

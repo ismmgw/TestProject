@@ -20,7 +20,7 @@ h1{
     font-size: 3em;
 }
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
 }
 h3{
     font-size: 1.5em;
@@ -88,6 +88,44 @@ nav a:hover{
     background: #ffffff;
     border-radius: 5px;
 }
+nav a:focus {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+nav a:focus:hover{
+    color: #ff7800;
+}
+/*-------------------------popup----------------------------*/
+.popup_input {
+    padding: 0 100px;
+}
+.popup_input input, textarea{
+    margin: 10px 0;
+}
+.popup_btn {
+    background: linear-gradient(to top, #ff6300, #ffc600);
+    width: 100%;
+    padding-top: 0px;
+    height: 40px;
+    color: white;
+    font-size: 1.7em;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.popup_btn:hover {
+    color: white;
+    text-decoration: underline;
+}
+.popup_btn:active {
+    color: white;
+}
+.popup_btn:visited {
+    color: white;
+}
+.popup_btn:focus{
+    color: white;
+}
 /*-------------------------icon_bar-------------------------*/
 .icon_layout{
     background: white;
@@ -141,6 +179,10 @@ nav a:hover{
     text-decoration: none;
 }
 /*---------------------applet_layout------------------*/
+/*for slider
+ui-slider ui-slider-handle
+ui-widjet-contant
+*/
 .applet_layout{
     background: #cccccc;
     padding-top: 50px;
@@ -196,7 +238,7 @@ nav a:hover{
 .applet_button {
     height: 40px;
     margin: 20px;
-    background: #ff9c00;
+    background: linear-gradient(to top, #ff6300, #ffc600);
     padding-top: 4px;
     font-size: 18pt;
     font-weight: 600;
@@ -227,8 +269,25 @@ nav a:hover{
 .feedback {
     background: #f0f0f0;
 }
+.feedback h2{
+    background: #f0f0f0;
+    position: relative;
+    z-index: 102;
+}
+.feedback h2:before{
+    content: '';
+    border-bottom: 1px solid #888888;
+    display: block;
+    height: 0;
+    width: 1060px;
+    position: relative;
+    right: -40px;
+    top: 20px;
+}
 .feedback a{
     color: #ff7800;
+    background: #f0f0f0;
+    z-index: 102;
     text-decoration: underline;
 }
 .feedback a:hover{
@@ -250,6 +309,7 @@ nav a:hover{
     padding: 0 10px;
     background: white;
 }
+/*.feedback_col_text:*/
 .feedback_col div.feedback_col_text:hover{
     background: #ff7800;
     color: white;
@@ -273,7 +333,7 @@ nav a:hover{
 /*}*/
 #bot_button {
     color: white;
-    background: #ff9c00;
+    background: linear-gradient(to top, #ff6300, #ffc600);
     font-weight: 600;
     font-size: 1.6em;
 }

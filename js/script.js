@@ -42,3 +42,25 @@ $( function() {
     $( "#amount3" ).val(  $( "#slider3" ).slider( "value" ) );
     $( "#amount_count3" ).val(  $( "#slider3" ).slider( "value" )*0.32+" P" );
 } );
+
+// function sliderInit(selector) {
+//     $(selector).slider({
+//         value: $(selector).data('val'),
+//         min: $(selector).data('min'),
+//         max: $(selector).data('max'),
+//         step: 1,
+//         slide: function( event, ui ) {
+//             var mainBlock = $(selector).parent().parent().parent().parent(); //aplet
+//
+//             mainBlock.find('.applet_slider_input').val( ui.value );
+//             mainBlock.find('.applet_profit_count_input').val( ui.value=parseInt(ui.value * $(selector).data('percent')) +" P" );
+//         }
+//     });
+// }
+//
+// $(document).ready(function(){
+//
+//     sliderInit("#slider");
+//     sliderInit("#slider2");
+//     sliderInit("#slider3");
+// });
