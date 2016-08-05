@@ -37,11 +37,10 @@ html(lang="ru")
                             .row
                                 .col-xs-4
                                     img(src="./img/people.png")
-                                .col-xs-8
-                                    .icon_text
+                                .col-xs-8.icon_text
                                         span.icon_text_top 6 823
                                         br
-                                        span.icon_text_bot инвесторов
+                                        p.icon_text_bot инвесторов
                     .col-md-3
                         .icon
                             .row
@@ -80,54 +79,78 @@ html(lang="ru")
                         .applet
                             .applet_percent 8%
                             .row
-                                .col-md-6.applet_days_left
-                                    img(src="./img/clock.png")
-                                    .applet_days_left_text 10 дней
-                                .col-md-6.applet_days_right
-                                    .applet_days_right_top 500 - 4999 Р
-                                    .applet_days_right_bot диапазон размера вкладов
+                                .col-xs-6
+                                    .row
+                                        .col-xs-3.text-right.padding_zero
+                                            img(src="./img/clock.png")
+                                        .col-xs-9.text-left
+                                            p 10 дней
+                                .col-xs-6.applet_days_right
+                                    span 500 - 4999 Р
+                                    br
+                                    span.applet_days_right_bot диапазон размера вкладов
                             .applet_slider
-                                .applet_slider_text 3500
-                                .applet_slider_slider
-                                    div(id="slider")
+                                .row
+                                    .col-xs-4.text-left
+                                        input.applet_slider_input(type="text" id="amount" readonly)
+                                    .col-xs-8.text-right
+                                        div.applet_slider(id="slider")
                             .applet_profit_text Ваша прибыль
-                            .applet_profit_count 1 600 Р
+                            .applet_profit_count
+                                input.applet_profit_count_input(type="text" id="amount_count" readonly)
                             .applet_button
                                 a(href="#") Открыть вклад
                     .col-md-4
                         .applet
                             .applet_percent 20%
                             .row
-                                .col-md-6.applet_days_left
-                                    img(src="./img/clock.png")
-                                    .applet_days_left_text 10 дней
-                                .col-md-6.applet_days_right
-                                    .applet_days_right_top 500 - 4999 Р
-                                    .applet_days_right_bot диапазон размера вкладов
+                                .col-xs-6
+                                    .row
+                                        .col-xs-3.text-right.padding_zero
+                                            img(src="./img/clock.png")
+                                        .col-xs-9.text-left
+                                            p 20 дней
+                                .col-xs-6.applet_days_right
+                                    span 5000 - 9999 Р
+                                    br
+                                    span.applet_days_right_bot диапазон размера вкладов
                             .applet_slider
-                                .applet_slider_text 3500
-                                .applet_slider_slider слайдер здесь будет
+                                .row
+                                    .col-xs-4.text-left
+                                        input.applet_slider_input(type="text" id="amount2" readonly)
+                                    .col-xs-8.text-right
+                                        div.applet_slider(id="slider2")
                             .applet_profit_text Ваша прибыль
-                            .applet_profit_count 1 600 Р
+                            .applet_profit_count
+                                input.applet_profit_count_input(type="text" id="amount_count2" readonly)
                             .applet_button
                                 a(href="#") Открыть вклад
                     .col-md-4
                         .applet
                             .applet_percent 32%
                             .row
-                                .col-md-6.applet_days_left
-                                    img(src="./img/clock.png")
-                                    .applet_days_left_text 10 дней
-                                .col-md-6.applet_days_right
-                                    .applet_days_right_top 500 - 4999 Р
-                                    .applet_days_right_bot диапазон размера вкладов
+                                .col-xs-6
+                                    .row
+                                        .col-xs-3.text-right.padding_zero
+                                            img(src="./img/clock.png")
+                                        .col-xs-9.text-left
+                                            p 30 дней
+                                .col-xs-6.applet_days_right
+                                    span 10000 - 15000 Р
+                                    br
+                                    span.applet_days_right_bot диапазон размера вкладов
                             .applet_slider
-                                .applet_slider_text 3500
-                                .applet_slider_slider слайдер здесь будет
+                                .row
+                                    .col-xs-4.text-left
+                                        input.applet_slider_input(type="text" id="amount3" readonly)
+                                    .col-xs-8.text-right
+                                        div.applet_slider(id="slider3")
                             .applet_profit_text Ваша прибыль
-                            .applet_profit_count 1 600 Р
+                            .applet_profit_count
+                                input.applet_profit_count_input(type="text" id="amount_count3" readonly)
                             .applet_button
                                 a(href="#") Открыть вклад
+
         .advantage
             .container
                 h2 Приемущества работы с нами
@@ -214,6 +237,7 @@ html(lang="ru")
                                 .col-md-4
                                     input.form-control(type="email" placeholder="Email")
                         button.btn(type="submit" id="bot_button") Зарегистрироваться
+
         footer
             .container
                 .row
@@ -234,3 +258,4 @@ html(lang="ru")
                                 a(href="#") Отзывы
                             .col-md-2
                                 a(href="#") Контакты
+    include ./blocks/script.jade

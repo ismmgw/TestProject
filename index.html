@@ -6,19 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/jquery.css">
-    <script src="./jquery/jquery-1.12.4.js"></script>
-    <script src="./jquery/jquery-ui.js"></script>
-    <!--script(src="https://use.fontawesome.com/9558d9367c.js")-->
-    <scrip></scrip>
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <!--<script>-->
-  <!--$( function() {-->
-  <!--$( "#slider" ).slider();-->
-  <!--} );-->
-  <!--</script>-->
   <body>
     <header>
       <div class="container">
@@ -48,8 +39,8 @@
             <div class="icon">
               <div class="row">
                 <div class="col-xs-4"><img src="./img/people.png"></div>
-                <div class="col-xs-8">
-                  <div class="icon_text"><span class="icon_text_top">6 823</span><br><span class="icon_text_bot">инвесторов</span></div>
+                <div class="col-xs-8 icon_text"><span class="icon_text_top">6 823</span><br>
+                  <p class="icon_text_bot">инвесторов</p>
                 </div>
               </div>
             </div>
@@ -91,22 +82,30 @@
             <div class="applet">
               <div class="applet_percent">8%</div>
               <div class="row">
-                <div class="col-md-6 applet_days_left"><img src="./img/clock.png">
-                  <div class="applet_days_left_text">10 дней</div>
+                <div class="col-xs-6">
+                  <div class="row">
+                    <div class="col-xs-3 text-right padding_zero"><img src="./img/clock.png"></div>
+                    <div class="col-xs-9 text-left">
+                      <p>10 дней</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6 applet_days_right">
-                  <div class="applet_days_right_top">500 - 4999 Р</div>
-                  <div class="applet_days_right_bot">диапазон размера вкладов</div>
-                </div>
+                <div class="col-xs-6 applet_days_right"><span>500 - 4999 Р</span><br><span class="applet_days_right_bot">диапазон размера вкладов</span></div>
               </div>
               <div class="applet_slider">
-                <div class="applet_slider_text">3500</div>
-                <div class="applet_slider_slider">
-                  <div id="slider"></div>
+                <div class="row">
+                  <div class="col-xs-4 text-left">
+                    <input type="text" id="amount" readonly class="applet_slider_input">
+                  </div>
+                  <div class="col-xs-8 text-right">
+                    <div id="slider" class="applet_slider"></div>
+                  </div>
                 </div>
               </div>
               <div class="applet_profit_text">Ваша прибыль</div>
-              <div class="applet_profit_count">1 600 Р</div>
+              <div class="applet_profit_count">
+                <input type="text" id="amount_count" readonly class="applet_profit_count_input">
+              </div>
               <div class="applet_button"><a href="#">Открыть вклад</a></div>
             </div>
           </div>
@@ -114,20 +113,30 @@
             <div class="applet">
               <div class="applet_percent">20%</div>
               <div class="row">
-                <div class="col-md-6 applet_days_left"><img src="./img/clock.png">
-                  <div class="applet_days_left_text">10 дней</div>
+                <div class="col-xs-6">
+                  <div class="row">
+                    <div class="col-xs-3 text-right padding_zero"><img src="./img/clock.png"></div>
+                    <div class="col-xs-9 text-left">
+                      <p>20 дней</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6 applet_days_right">
-                  <div class="applet_days_right_top">500 - 4999 Р</div>
-                  <div class="applet_days_right_bot">диапазон размера вкладов</div>
-                </div>
+                <div class="col-xs-6 applet_days_right"><span>5000 - 9999 Р</span><br><span class="applet_days_right_bot">диапазон размера вкладов</span></div>
               </div>
               <div class="applet_slider">
-                <div class="applet_slider_text">3500</div>
-                <div class="applet_slider_slider">слайдер здесь будет</div>
+                <div class="row">
+                  <div class="col-xs-4 text-left">
+                    <input type="text" id="amount2" readonly class="applet_slider_input">
+                  </div>
+                  <div class="col-xs-8 text-right">
+                    <div id="slider2" class="applet_slider"></div>
+                  </div>
+                </div>
               </div>
               <div class="applet_profit_text">Ваша прибыль</div>
-              <div class="applet_profit_count">1 600 Р</div>
+              <div class="applet_profit_count">
+                <input type="text" id="amount_count2" readonly class="applet_profit_count_input">
+              </div>
               <div class="applet_button"><a href="#">Открыть вклад</a></div>
             </div>
           </div>
@@ -135,20 +144,30 @@
             <div class="applet">
               <div class="applet_percent">32%</div>
               <div class="row">
-                <div class="col-md-6 applet_days_left"><img src="./img/clock.png">
-                  <div class="applet_days_left_text">10 дней</div>
+                <div class="col-xs-6">
+                  <div class="row">
+                    <div class="col-xs-3 text-right padding_zero"><img src="./img/clock.png"></div>
+                    <div class="col-xs-9 text-left">
+                      <p>30 дней</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6 applet_days_right">
-                  <div class="applet_days_right_top">500 - 4999 Р</div>
-                  <div class="applet_days_right_bot">диапазон размера вкладов</div>
-                </div>
+                <div class="col-xs-6 applet_days_right"><span>10000 - 15000 Р</span><br><span class="applet_days_right_bot">диапазон размера вкладов</span></div>
               </div>
               <div class="applet_slider">
-                <div class="applet_slider_text">3500</div>
-                <div class="applet_slider_slider">слайдер здесь будет</div>
+                <div class="row">
+                  <div class="col-xs-4 text-left">
+                    <input type="text" id="amount3" readonly class="applet_slider_input">
+                  </div>
+                  <div class="col-xs-8 text-right">
+                    <div id="slider3" class="applet_slider"></div>
+                  </div>
+                </div>
               </div>
               <div class="applet_profit_text">Ваша прибыль</div>
-              <div class="applet_profit_count">1 600 Р</div>
+              <div class="applet_profit_count">
+                <input type="text" id="amount_count3" readonly class="applet_profit_count_input">
+              </div>
               <div class="applet_button"><a href="#">Открыть вклад</a></div>
             </div>
           </div>
@@ -297,4 +316,7 @@
       </div>
     </footer>
   </body>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery-ui.js"></script>
+  <script src="./js/script.js"></script>
 </html>
