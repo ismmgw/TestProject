@@ -12,24 +12,35 @@ header
                         span &nbspили&nbsp
                         a(href="#") зарегистрироваться
     nav
-        a(href="#") О НАС
-        a(href="#") ТАРИФЫ
-        a(href="#") ПРАФИЛА
-        a(href="#") FAQ
-        a(href="#") ОТЗЫВЫ
-        a(href="#") КОНТАКТЫ
-        a(href="#" data-toggle="modal" data-target="#popup") ОБРАТНАЯ СВЯЗЬ
+        .container
+            .row
+                .col-md-9
+                    .row.six_row
+                        .col-md-1.left-cols
+                            a(href="#") О НАС
+                        .col-md-1.left-cols
+                            a(href="#") ТАРИФЫ
+                        .col-md-1.left-cols
+                            a(href="#") ПРАВИЛА
+                        .col-md-1.left-cols
+                            a(href="#") FAQ
+                        .col-md-1.left-cols
+                            a(href="#") ОТЗЫВЫ
+                        .col-md-1.left-cols
+                            a(href="#") КОНТАКТЫ
+                .col-md-3
+                    a.callback_btn(href="#" data-toggle="modal" data-target="#popup") Обратная связь
     .container
         .modal.fade(id="popup" role="dialog")
             .modal-dialog
-                .modal-content
+                .modal-content.popup.popup_input
                     .modal-header
-                        button(type="button" class="close" data-dismiss="modal" aria-hidden="true") &times;
-                        h2.modal-title Обратная связь
-                    .modal-body
+                        button.close.text-right(type="button" data-dismiss="modal" aria-hidden="true") &times;
+                        h2.modal-title.text-left Обратная связь
+                    form.modal-body
                         .row
-                            .popup_input
-                                input.form-control(type="text" placeholder="Имя")
-                                input.form-control(type="email" placeholder="email")
-                                textarea.form-control(rows="3" placeholder=" сообщение")
-                                button.btn.popup_btn(type="button") Отправить
+                            input.form-control(type="text" placeholder="Имя")
+                            input.form-control(type="email" placeholder="email")
+                            p.text-left Сообщение
+                            textarea.form-control(rows="3")
+                            button.btn.button(type="submit" id="popup_button") Отправить

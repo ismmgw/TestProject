@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ТЕСТОВАЯ СТРАНИЦА</title>
+    <title>TRADER inc</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/styles.css">
     <!--script(src="https://use.fontawesome.com/9558d9367c.js")-->
   </head>
@@ -21,25 +22,40 @@
           </div>
         </div>
       </div>
-      <nav><a href="#">О НАС</a><a href="#">ТАРИФЫ</a><a href="#">ПРАФИЛА</a><a href="#">FAQ</a><a href="#">ОТЗЫВЫ</a><a href="#">КОНТАКТЫ</a><a href="#" data-toggle="modal" data-target="#popup">ОБРАТНАЯ СВЯЗЬ</a></nav>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="row six_row">
+                <div class="col-md-1 left-cols"><a href="#">О НАС</a></div>
+                <div class="col-md-1 left-cols"><a href="#">ТАРИФЫ</a></div>
+                <div class="col-md-1 left-cols"><a href="#">ПРАВИЛА</a></div>
+                <div class="col-md-1 left-cols"><a href="#">FAQ</a></div>
+                <div class="col-md-1 left-cols"><a href="#">ОТЗЫВЫ</a></div>
+                <div class="col-md-1 left-cols"><a href="#">КОНТАКТЫ</a></div>
+              </div>
+            </div>
+            <div class="col-md-3"><a href="#" data-toggle="modal" data-target="#popup" class="callback_btn">Обратная связь</a></div>
+          </div>
+        </div>
+      </nav>
       <div class="container">
         <div id="popup" role="dialog" class="modal fade">
           <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content popup popup_input">
               <div class="modal-header">
-                <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
-                <h2 class="modal-title">Обратная связь</h2>
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close text-right">&times;</button>
+                <h2 class="modal-title text-left">Обратная связь</h2>
               </div>
-              <div class="modal-body">
+              <form class="modal-body">
                 <div class="row">
-                  <div class="popup_input">
-                    <input type="text" placeholder="Имя" class="form-control">
-                    <input type="email" placeholder="email" class="form-control">
-                    <textarea rows="3" placeholder=" сообщение" class="form-control"></textarea>
-                    <button type="button" class="btn popup_btn">Отправить</button>
-                  </div>
+                  <input type="text" placeholder="Имя" class="form-control">
+                  <input type="email" placeholder="email" class="form-control">
+                  <p class="text-left">Сообщение</p>
+                  <textarea rows="3" class="form-control"></textarea>
+                  <button type="submit" id="popup_button" class="btn button">Отправить</button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -181,32 +197,24 @@
     </div>
     <div class="advantage">
       <div class="container">
-        <h2>Приемущества работы с нами</h2>
+        <h2 class="advantage_padding_20">Приемущества работы с нами</h2>
         <p>За 4 года работы мы выработали и готовы ввм предложить следующие преимущества, относительно других сервисов!</p>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="advantage_col"><img src="./img/shield.png">
-              <h3>100% гарантия</h3>
-              <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
-            </div>
+        <div class="row advantage_padding_30">
+          <div class="col-md-3"><img src="./img/shield.png">
+            <h3>100% гарантия</h3>
+            <p>Защита от DDos -атак. Геораспределённая сеть фильтрация с узлами Нидерландах, Украине, России и Германии с пропускной способностью более 1.5 Tbps обеспечит стабильную работу проекта.</p>
           </div>
-          <div class="col-md-3">
-            <div class="advantage_col"><img src="./img/lock.png">
-              <h3>Надёжная защита</h3>
-              <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
-            </div>
+          <div class="col-md-3"><img src="./img/lock.png">
+            <h3>Надёжная защита</h3>
+            <p>SSL шифрование гарантирует безопасное соединение между сервером и браузером пользователя - информация передаётся в закодированном виде, и расшифровать её можно только с помощью специального ключа, являющегося частью сертификата.</p>
           </div>
-          <div class="col-md-3">
-            <div class="advantage_col"><img src="./img/speedometr.png">
-              <h3>Быстрые выплаты</h3>
-              <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
-            </div>
+          <div class="col-md-3"><img src="./img/speedometr.png">
+            <h3>Быстрые выплаты</h3>
+            <p>Выплаты из Player и Perfect Money мгновенные инстанты на Яндекс и Киви в течении 24 часов, фактически 2-4 часа.</p>
           </div>
-          <div class="col-md-3">
-            <div class="advantage_col"><img src="./img/set.png">
-              <h3>Техническая поддержка</h3>
-              <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
-            </div>
+          <div class="col-md-3"><img src="./img/set.png">
+            <h3>Техническая поддержка</h3>
+            <p>Наши специалисты помогут решить любую проблему в рамках проекта.</p>
           </div>
         </div>
       </div>
@@ -216,7 +224,7 @@
         <div class="feedback_h">
           <h2><a href="#">Отзывы</a><span> наших инвесторов</span></h2>
         </div>
-        <div class="row">
+        <div class="row feedback_bot">
           <div class="col-md-3">
             <div class="feedback_col">
               <div class="row">
@@ -227,9 +235,7 @@
                 </div>
               </div>
               <div class="feedback_col_text text-left">
-                <div>
-                  <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
-                </div>
+                <p>Товарищи! консультация с широким активом играет важную роль в формировании модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
               </div>
             </div>
           </div>

@@ -1,14 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,500,700&subset=latin,cyrillic);
-/* cyrillic */
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v9/IiMFELcoPB-OzGzq14k4ehJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
 * {
-    font-family: ubuntu;
+    font-family: Ubuntu;
+    font-style: normal;
 }
 body {
     padding: 0;
@@ -21,6 +13,7 @@ h1{
 }
 h2 {
     font-size: 2.2em;
+    font-weight: 500;
 }
 h3{
     font-size: 1.5em;
@@ -32,6 +25,33 @@ p{
 }
 .padding_zero{
     padding: 0;
+}
+/*------------------------BUTTON-------------------------*/
+.button{
+    background: linear-gradient(to top, #ff6300, #ffc600);
+    height: 50px;
+    color: white;
+    font-size: 1.7em;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.button:hover {
+    color: white;
+    text-decoration: underline;
+}
+.button:active {
+    color: white;
+    background: linear-gradient(to top, #ff6300, #ffc600);
+    outline: none;
+}
+.button:visited{
+    color: white;
+    background: linear-gradient(to top, #ff6300, #ffc600);
+}
+.button:focus{
+    color: white;
+    background: linear-gradient(to top, #ff6300, #ffc600);
+    outline: none;
 }
 /*------------------------HEADER----------------------------*/
 .head_row{
@@ -59,25 +79,25 @@ p{
     color: #ff7800;
     text-decoration: none;
 }
+/*----------------------NAV_BAR--------------------------*/
 nav {
-    font-weight: 600;
-    padding: 24px;
     background: #ff7800;
     color: white;
     position: relative;
     z-index: 100;
 }
 nav a{
-    padding: 13px 32px 12px 32px;
-    margin: 0 20px 0 20px;
+    font-weight: 500;
     color: white;
+    padding-top: 22px;
+    padding-bottom: 22px;
     text-decoration: none;
+    display: block;
 }
 nav a:hover{
-    color: #ff7800;
+    color: #ffffff;
     text-decoration: none;
-    background: #ffffff;
-    border-radius: 5px;
+    background: #595959;
 }
 nav a:focus {
     color: white;
@@ -85,37 +105,64 @@ nav a:focus {
     outline: none;
 }
 nav a:focus:hover{
+    color: #ffffff;
+}
+@media (min-width: 768px) {
+    .col-md-1 .left-cols,
+    .col-sm-1 .left-cols,
+    .col-lg-1 .left-cols {
+        width: 100%;
+        *width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .six_row .col-md-1,
+    .six_row .col-sm-1,
+    .six_row .col-lg-1 {
+        /*width: 14.285714285714285714285714285714%;*/
+        /**width: 14.285714285714285714285714285714%;*/
+        width: 16.666666667%;
+        *width: 16.666666667%;
+    }
+}
+.callback_btn{
+    font-weight: 400;
+    color: white;
+    margin: 13px 15px 12px 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.callback_btn:hover{
+    color: #ff7800;
+    text-decoration: none;
+    background: #ffffff;
+}
+.callback_btn:focus {
+    color: white;
+    text-decoration: none;
+    /*outline: none;*/
+}
+.callback_btn:focus:hover{
     color: #ff7800;
 }
 /*-------------------------popup----------------------------*/
-.popup_input {
-    padding: 0 100px;
-}
-.popup_input input, textarea{
-    margin: 10px 0;
-}
-.popup_btn {
-    background: linear-gradient(to top, #ff6300, #ffc600);
-    width: 100%;
-    padding-top: 0px;
-    height: 40px;
-    color: white;
-    font-size: 1.7em;
-    font-weight: 600;
+.popup{
     border-radius: 10px;
 }
-.popup_btn:hover {
-    color: white;
-    text-decoration: underline;
+.popup_input input, .popup_input textarea,.popup_input h2, .popup_input button.btn{
+    margin: 20px 10%;
+    width:80%;
+    resize: none;
 }
-.popup_btn:active {
-    color: white;
-}
-.popup_btn:visited {
-    color: white;
-}
-.popup_btn:focus{
-    color: white;
+.popup_input p{
+    margin: 0 10%;
+    font-weight: 500;
+    color: #888888;
+    width:80%;
 }
 /*-------------------------icon_bar-------------------------*/
 .icon_layout{
@@ -128,7 +175,9 @@ nav a:focus:hover{
 }
 .icon {
     margin: 20px 0;
-    padding: 20px 0 20px 80px;
+    padding: 20px 0 20px 0;
+    position: relative;
+    left: 40px;
 
 }
 .icon_font{
@@ -142,7 +191,7 @@ nav a:focus:hover{
 }
 .icon_text_top{
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 700;
     text-align:left;
 }
 .icon_text_bot{
@@ -157,7 +206,7 @@ nav a:focus:hover{
 }
 .tariff_head_into{
     background: white;
-    border: 1px solid gray;
+    border: 1px solid #cccccc;
     height: 74px;
     width: 450px;
     position: relative;
@@ -166,6 +215,7 @@ nav a:focus:hover{
     padding-top: 15px;
     border-radius: 50px;
     font-size: 2em;
+    font-weight: 500;
 }
 .tariff_head_into a{
     color: #ff7800;
@@ -254,13 +304,11 @@ ui-widjet-contant
 .advantage{
     background: #f0f0f0;
 }
-.advantage_col{
-    margin: 5px;
-    padding: 5px 5px 5px 10px;
-    /*text-align: left;*/
+.advantage_padding_20{
+    padding-top: 20px;
 }
-.advantage_col h3{
-    height: 40px;
+.advantage_padding_30{
+    padding-top: 30px;
 }
 /*----------------feedback-------------------*/
 .feedback {
@@ -283,7 +331,8 @@ ui-widjet-contant
     background: #f0f0f0;
     position: relative;
     z-index: 102;
-    padding: 0px 20px;
+    padding: 0 20px;
+    margin-bottom: 30px;
 }
 .feedback .feedback_h:before{
     content: '';
@@ -316,34 +365,53 @@ ui-widjet-contant
 }
 .feedback_col_text{
     margin-top: 10px;
-    padding: 0 10px;
+    padding: 10px 10px 10px 15px;
     background: white;
     cursor: pointer;
-    height: 100px;
-    border: 1px solid grey;
+    height: 145px;
     overflow: hidden;
+    box-shadow: 0px -74px 49px -47px #f0f0f0 inset;
 }
-
+/*.feedback_col_text p{*/
+    /*background: white;*/
+    /*padding: 10px 10px 10px 15px;*/
+    /*position:relative;*/
+    /*z-index:-1;*/
+    /*color: #000;*/
+/*}*/
 .feedback_col_text:before{
     content: '';
     display: block;
-    position: relative;
-    left: 70px;
-    top: -25px;
+    position: absolute;
+    left: 100px;
+    top: 60px;
     width: 0;
     height: 0;
+    margin: 0;
+    padding: 0;
     border-style: solid;
     border-width: 25px 0 0 25px;
     border-color: transparent transparent transparent #ffffff;
+
 }
 .feedback_col div.feedback_col_text:hover:before{
+    left: 80px;
+    top: -22px;
     border-color: transparent transparent transparent #ff7800;
 }
 .feedback_col div.feedback_col_text:hover{
     background: #ff7800;
     color: white;
+    position: absolute;
+    overflow: visible;
+    visibility: visible;
+    height: auto;
+    z-index: 1000;
+    box-shadow: none;
 }
-
+.feedback_bot{
+    margin-bottom: 30px;
+}
 /*----------------bottom_form------------------*/
 .bottom_form{
     background: white;
