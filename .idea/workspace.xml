@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e149e866-9347-406b-af86-de3b15001fa7" name="Default" comment="2">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui.structure.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery-ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/cub.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/lock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/money.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/people.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/stack.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Personal.html" afterPath="$PROJECT_DIR$/Personal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -56,11 +48,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/jade/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="205" column="14" selection-start-line="205" selection-start-column="14" selection-end-line="205" selection-end-column="14" />
+                <state relative-caret-position="360">
+                  <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -69,28 +61,8 @@
           <file leaf-file-name="Personal.jade" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/jade/Personal.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="36">
-                  <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="script.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/jade/blocks/script.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+                <state relative-caret-position="716">
+                  <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -99,8 +71,18 @@
           <file leaf-file-name="header.jade" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/jade/blocks/header.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+                <state relative-caret-position="698">
+                  <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Personal.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Personal.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="36">
+                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -123,24 +105,26 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="671">
-                  <caret line="520" column="1" selection-start-line="520" selection-start-column="1" selection-end-line="520" selection-end-column="1" />
+                <state relative-caret-position="473">
+                  <caret line="263" column="26" selection-start-line="263" selection-start-column="26" selection-end-line="263" selection-end-column="26" />
                   <folding>
-                    <marker date="1470563657351" expanded="false" signature="85:417" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="478:1043" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="1129:1504" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="1568:2712" ph="..." />
-                    <marker date="1470563657351" expanded="true" signature="1893:2013" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="2861:3130" ph="..." />
-                    <marker date="1470563657351" expanded="true" signature="3131:3194" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="3194:3723" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="3787:4265" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="4329:5633" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="5697:5831" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="5895:7945" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="8009:8308" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="8714:9723" ph="..." />
-                    <marker date="1470563657351" expanded="false" signature="10377:10606" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="85:417" ph="..." />
+                    <marker date="1470589104009" expanded="true" signature="478:1144" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="1285:1660" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="1724:2868" ph="..." />
+                    <marker date="1470589104009" expanded="true" signature="2049:2169" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="2932:3258" ph="..." />
+                    <marker date="1470589104009" expanded="true" signature="3344:3407" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="3407:3936" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="4000:4478" ph="..." />
+                    <marker date="1470589104009" expanded="true" signature="4542:6284" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="6350:6484" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="6548:8598" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="8662:8824" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="8910:9166" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="9230:10239" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="10325:10835" ph="..." />
+                    <marker date="1470589104009" expanded="false" signature="10921:11150" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -157,7 +141,7 @@
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-90">
-                  <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+                  <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -213,12 +197,12 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/jade/blocks/head.jade" />
         <option value="$PROJECT_DIR$/jade/blocks/script.jade" />
-        <option value="$PROJECT_DIR$/jade/index.jade" />
-        <option value="$PROJECT_DIR$/jade/index.jade" />
-        <option value="$PROJECT_DIR$/jade/blocks/header.jade" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/jade/Personal.jade" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/jade/blocks/header.jade" />
+        <option value="$PROJECT_DIR$/jade/index.jade" />
+        <option value="$PROJECT_DIR$/jade/index.jade" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
       </list>
     </option>
   </component>
@@ -625,7 +609,7 @@
       <workItem from="1470384187349" duration="3648000" />
       <workItem from="1470418030001" duration="9364000" />
       <workItem from="1470468278560" duration="26634000" />
-      <workItem from="1470545667375" duration="16957000" />
+      <workItem from="1470545667375" duration="29454000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1470073529831</created>
@@ -645,7 +629,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238890000" />
+    <option name="totallyTimeSpent" value="251387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -658,7 +642,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2098121" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1973466" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -797,11 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ti_p001_main.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
@@ -821,7 +800,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-90">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -834,18 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Personal.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jade/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="205" column="14" selection-start-line="205" selection-start-column="14" selection-end-line="205" selection-end-column="14" />
+        <state relative-caret-position="72">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -858,51 +829,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jade/Personal.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jade/blocks/header.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="698">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Personal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ti_p001_main.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="520" column="1" selection-start-line="520" selection-start-column="1" selection-end-line="520" selection-end-column="1" />
+        <state relative-caret-position="473">
+          <caret line="263" column="26" selection-start-line="263" selection-start-column="26" selection-end-line="263" selection-end-column="26" />
           <folding>
-            <marker date="1470563657351" expanded="false" signature="85:417" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="478:1043" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="1129:1504" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="1568:2712" ph="..." />
-            <marker date="1470563657351" expanded="true" signature="1893:2013" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="2861:3130" ph="..." />
-            <marker date="1470563657351" expanded="true" signature="3131:3194" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="3194:3723" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="3787:4265" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="4329:5633" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="5697:5831" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="5895:7945" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="8009:8308" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="8714:9723" ph="..." />
-            <marker date="1470563657351" expanded="false" signature="10377:10606" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="85:417" ph="..." />
+            <marker date="1470589104009" expanded="true" signature="478:1144" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="1285:1660" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="1724:2868" ph="..." />
+            <marker date="1470589104009" expanded="true" signature="2049:2169" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="2932:3258" ph="..." />
+            <marker date="1470589104009" expanded="true" signature="3344:3407" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="3407:3936" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="4000:4478" ph="..." />
+            <marker date="1470589104009" expanded="true" signature="4542:6284" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="6350:6484" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="6548:8598" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="8662:8824" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="8910:9166" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="9230:10239" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="10325:10835" ph="..." />
+            <marker date="1470589104009" expanded="false" signature="10921:11150" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jade/Personal.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>

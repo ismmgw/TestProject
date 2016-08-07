@@ -44,9 +44,9 @@ html(lang="ru")
                 span=' и вперёд!'
         .applet_layout
             .container
-                .row
+                .row.applet_row
                     .col-md-4
-                        .applet
+                        .applet.left
                             .applet_percent 8%
                             .row
                                 .col-xs-6
@@ -68,10 +68,9 @@ html(lang="ru")
                             .applet_profit_text Ваша прибыль
                             .applet_profit_count
                                 input.applet_profit_count_input(type="text" id="amount_count" readonly)
-                            .applet_button
-                                a(href="#") Открыть вклад
+                            a.button.applet_button(href="#") Открыть вклад
                     .col-md-4
-                        .applet
+                        .applet.big
                             .applet_percent 20%
                             .row
                                 .col-xs-6
@@ -93,10 +92,9 @@ html(lang="ru")
                             .applet_profit_text Ваша прибыль
                             .applet_profit_count
                                 input.applet_profit_count_input(type="text" id="amount_count2" readonly)
-                            .applet_button
-                                a(href="#") Открыть вклад
+                            a.button.applet_button_big(href="#") Открыть вклад
                     .col-md-4
-                        .applet
+                        .applet.big_right
                             .applet_percent 32%
                             .row
                                 .col-xs-6
@@ -118,8 +116,7 @@ html(lang="ru")
                             .applet_profit_text Ваша прибыль
                             .applet_profit_count
                                 input.applet_profit_count_input(type="text" id="amount_count3" readonly)
-                            .applet_button
-                                a(href="#") Открыть вклад
+                            a.button.applet_button_big(href="#") Открыть вклад
 
         .advantage
             .container
@@ -193,16 +190,22 @@ html(lang="ru")
             h2 Начни зарабатывать СЕЙЧАС
             .container
                 .bottom_form_layout
-                    form
+                    form.user_form
                         .row
                             .bottom_form_space
                                 .col-md-4
-                                    input.form-control(type="text" placeholder="Имя")
+                                    .input-group
+                                        input.form-control(type="text" placeholder="Имя")
+                                        .input-group-addon Имя
                                 .col-md-4
-                                    input.form-control(type="text" placeholder="Фамилия")
+                                    .input-group
+                                        input.form-control(type="text" placeholder="Фамилия")
+                                        .input-group-addon Фамилия
                                 .col-md-4
-                                    input.form-control(type="email" placeholder="Email")
-                        button.btn(type="submit" id="bot_button") Зарегистрироваться
+                                    .input-group
+                                        input.form-control(type="email" placeholder="Email")
+                                        .input-group-addon Email
+                        button.btn.button(type="submit" id="bot_button") Зарегистрироваться
         footer
             .container
                 .row

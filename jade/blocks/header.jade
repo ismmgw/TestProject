@@ -34,14 +34,18 @@ header
     .container
         .modal.fade(id="popup" role="dialog")
             .modal-dialog
-                .modal-content.popup.popup_input
+                .modal-content.popup
                     .modal-header
                         button.close.text-right(type="button" data-dismiss="modal" aria-hidden="true") &times;
                         h2.modal-title.text-left Обратная связь
-                    form.modal-body
+                    form.modal-body.user_form
                         .row
-                            input.form-control(type="text" placeholder="Имя")
-                            input.form-control(type="email" placeholder="email")
+                            .input-group
+                                input.form-control(type="text" placeholder="Имя")
+                                .input-group-addon Имя
+                            .input-group
+                                input.form-control(type="email" placeholder="Email")
+                                .input-group-addon Email
                             p.text-left Сообщение
                             textarea.form-control(rows="3")
                             button.btn.button(type="submit" id="popup_button") Отправить

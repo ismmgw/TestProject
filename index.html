@@ -43,15 +43,21 @@
       <div class="container">
         <div id="popup" role="dialog" class="modal fade">
           <div class="modal-dialog">
-            <div class="modal-content popup popup_input">
+            <div class="modal-content popup">
               <div class="modal-header">
                 <button type="button" data-dismiss="modal" aria-hidden="true" class="close text-right">&times;</button>
                 <h2 class="modal-title text-left">Обратная связь</h2>
               </div>
-              <form class="modal-body">
+              <form class="modal-body user_form">
                 <div class="row">
-                  <input type="text" placeholder="Имя" class="form-control">
-                  <input type="email" placeholder="email" class="form-control">
+                  <div class="input-group">
+                    <input type="text" placeholder="Имя" class="form-control">
+                    <div class="input-group-addon">Имя</div>
+                  </div>
+                  <div class="input-group">
+                    <input type="email" placeholder="Email" class="form-control">
+                    <div class="input-group-addon">Email</div>
+                  </div>
                   <p class="text-left">Сообщение</p>
                   <textarea rows="3" class="form-control"></textarea>
                   <button type="submit" id="popup_button" class="btn button">Отправить</button>
@@ -99,9 +105,9 @@
     </div>
     <div class="applet_layout">
       <div class="container">
-        <div class="row">
+        <div class="row applet_row">
           <div class="col-md-4">
-            <div class="applet">
+            <div class="applet left">
               <div class="applet_percent">8%</div>
               <div class="row">
                 <div class="col-xs-6">
@@ -127,12 +133,11 @@
               <div class="applet_profit_text">Ваша прибыль</div>
               <div class="applet_profit_count">
                 <input type="text" id="amount_count" readonly class="applet_profit_count_input">
-              </div>
-              <div class="applet_button"><a href="#">Открыть вклад</a></div>
+              </div><a href="#" class="button applet_button">Открыть вклад</a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="applet">
+            <div class="applet big">
               <div class="applet_percent">20%</div>
               <div class="row">
                 <div class="col-xs-6">
@@ -158,12 +163,11 @@
               <div class="applet_profit_text">Ваша прибыль</div>
               <div class="applet_profit_count">
                 <input type="text" id="amount_count2" readonly class="applet_profit_count_input">
-              </div>
-              <div class="applet_button"><a href="#">Открыть вклад</a></div>
+              </div><a href="#" class="button applet_button_big">Открыть вклад</a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="applet">
+            <div class="applet big_right">
               <div class="applet_percent">32%</div>
               <div class="row">
                 <div class="col-xs-6">
@@ -189,8 +193,7 @@
               <div class="applet_profit_text">Ваша прибыль</div>
               <div class="applet_profit_count">
                 <input type="text" id="amount_count3" readonly class="applet_profit_count_input">
-              </div>
-              <div class="applet_button"><a href="#">Открыть вклад</a></div>
+              </div><a href="#" class="button applet_button_big">Открыть вклад</a>
             </div>
           </div>
         </div>
@@ -289,21 +292,30 @@
       <h2>Начни зарабатывать СЕЙЧАС</h2>
       <div class="container">
         <div class="bottom_form_layout">
-          <form>
+          <form class="user_form">
             <div class="row">
               <div class="bottom_form_space">
                 <div class="col-md-4">
-                  <input type="text" placeholder="Имя" class="form-control">
+                  <div class="input-group">
+                    <input type="text" placeholder="Имя" class="form-control">
+                    <div class="input-group-addon">Имя</div>
+                  </div>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" placeholder="Фамилия" class="form-control">
+                  <div class="input-group">
+                    <input type="text" placeholder="Фамилия" class="form-control">
+                    <div class="input-group-addon">Фамилия</div>
+                  </div>
                 </div>
                 <div class="col-md-4">
-                  <input type="email" placeholder="Email" class="form-control">
+                  <div class="input-group">
+                    <input type="email" placeholder="Email" class="form-control">
+                    <div class="input-group-addon">Email</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <button type="submit" id="bot_button" class="btn">Зарегистрироваться</button>
+            <button type="submit" id="bot_button" class="btn button">Зарегистрироваться</button>
           </form>
         </div>
       </div>
