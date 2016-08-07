@@ -1,0 +1,80 @@
+doctype html
+html(lang="ru")
+    include ./blocks/head.jade
+    body
+        include ./blocks/header.jade
+        .personal_head
+            .container.text-left
+                h2 Личный кабинет
+        .personal_layout
+            .container
+                .row.two-cols
+                    .col-md-3.personal_nav
+                        ul
+                            li
+                                a(href="#") Баланс и вклады
+                            li
+                                a(href="#") Реферальная система
+                            li
+                                p Личные данные
+                            li
+                                a(href="#") Сменить пароль
+                            li
+                                a(href="#") История
+                    .col-md-9
+                        form.user_form
+                            .row
+                                .col-md-2
+                                    //label(for="exampleInputFile") Выберите фото
+                                    i.fa.fa-user.user_photo(aria-hidden="true")
+                                    //input(type="file" id="exampleInputFile") Загрузить файл
+                                    button.btn.user_btn(type="file") Загрузить фото
+                                .col-md-5
+                                    .input-group
+                                        input.form-control(type="text" placeholder="Имя")
+                                        .input-group-addon Имя
+                                    .input-group
+                                        input.form-control(type="text" placeholder="Фамилия")
+                                        .input-group-addon Фамилия
+                                    .input-group
+                                        input.form-control(type="text" placeholder="Город")
+                                        .input-group-addon Город
+                                    .input-group
+                                        input.form-control(type="email" placeholder="Email")
+                                        .input-group-addon Email
+                                    .row.text-left
+                                        .col-xs-12
+                                            button.btn.user_btn(type="submit")
+                                                i.fa.fa-pencil-square-o(aria-hidden="true")
+                                                span &nbsp&nbsp Редактировать
+                                .col-md-5
+                                    .input-group
+                                        input.form-control(type="text" placeholder="Логин")
+                                        .input-group-addon Логин
+                                    .input-group
+                                        input.form-control.readonly(type="text" readonly value="1.08.2016" placeholder="Дата")
+                                        .input-group-addon.readonly Дата
+                                    .input-group
+                                        input.form-control.readonly(type="text" readonly value="7 Дней" placeholder="Стаж")
+                                        .input-group-addon.readonly Стаж
+        footer
+            .container
+                .row
+                    .col-md-6
+                        .footer_left
+                            p.text-left &copy Trader inc.
+                    .col-md-6
+                        .row
+                            .col-md-2
+                                a(href="#") О нас
+                            .col-md-2
+                                a(href="#") Тарифы
+                            .col-md-2
+                                a(href="#") Правила
+                            .col-md-2
+                                a(href="#") FAQ
+                            .col-md-2
+                                a(href="#") Отзывы
+                            .col-md-2
+                                a(href="#") Контакты
+        include ./blocks/script.jade

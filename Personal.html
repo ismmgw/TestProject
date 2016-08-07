@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRADER inc</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--script(src="https://use.fontawesome.com/9558d9367c.js")-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row head_row">
+          <div class="col-md-6 head_1"><a href="#"><img src="./img/logo.png">
+              <h1>TRADER inc инвестиционный сервис</h1></a></div>
+          <div class="col-md-6">
+            <div class="head_4 text-right"><i aria-hidden="true" class="fa fa-user"></i><span class="head_4_text"><a href="#">Войти</a><span>&nbspили&nbsp</span><a href="#">зарегистрироваться</a></span></div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="row six_row">
+                <div class="col-md-1 left-cols"><a href="#">О НАС</a></div>
+                <div class="col-md-1 left-cols"><a href="#">ТАРИФЫ</a></div>
+                <div class="col-md-1 left-cols"><a href="#">ПРАВИЛА</a></div>
+                <div class="col-md-1 left-cols"><a href="#">FAQ</a></div>
+                <div class="col-md-1 left-cols"><a href="#">ОТЗЫВЫ</a></div>
+                <div class="col-md-1 left-cols"><a href="#">КОНТАКТЫ</a></div>
+              </div>
+            </div>
+            <div class="col-md-3"><a href="#" data-toggle="modal" data-target="#popup" class="callback_btn">Обратная связь</a></div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div id="popup" role="dialog" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content popup popup_input">
+              <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close text-right">&times;</button>
+                <h2 class="modal-title text-left">Обратная связь</h2>
+              </div>
+              <form class="modal-body">
+                <div class="row">
+                  <input type="text" placeholder="Имя" class="form-control">
+                  <input type="email" placeholder="email" class="form-control">
+                  <p class="text-left">Сообщение</p>
+                  <textarea rows="3" class="form-control"></textarea>
+                  <button type="submit" id="popup_button" class="btn button">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="personal_head">
+      <div class="container text-left">
+        <h2>Личный кабинет</h2>
+      </div>
+    </div>
+    <div class="personal_layout">
+      <div class="container">
+        <div class="row two-cols">
+          <div class="col-md-3 personal_nav">
+            <ul>
+              <li><a href="#">Баланс и вклады</a></li>
+              <li><a href="#">Реферальная система</a></li>
+              <li>
+                <p>Личные данные</p>
+              </li>
+              <li><a href="#">Сменить пароль</a></li>
+              <li><a href="#">История</a></li>
+            </ul>
+          </div>
+          <div class="col-md-9">
+            <form class="user_form">
+              <div class="row">
+                <div class="col-md-2">
+                  <!--label(for="exampleInputFile") Выберите фото--><i aria-hidden="true" class="fa fa-user user_photo"></i>
+                  <!--input(type="file" id="exampleInputFile") Загрузить файл-->
+                  <button type="file" class="btn user_btn">Загрузить фото</button>
+                </div>
+                <div class="col-md-5">
+                  <div class="input-group">
+                    <input type="text" placeholder="Имя" class="form-control">
+                    <div class="input-group-addon">Имя</div>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" placeholder="Фамилия" class="form-control">
+                    <div class="input-group-addon">Фамилия</div>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" placeholder="Город" class="form-control">
+                    <div class="input-group-addon">Город</div>
+                  </div>
+                  <div class="input-group">
+                    <input type="email" placeholder="Email" class="form-control">
+                    <div class="input-group-addon">Email</div>
+                  </div>
+                  <div class="row text-left">
+                    <div class="col-xs-12">
+                      <button type="submit" class="btn user_btn"><i aria-hidden="true" class="fa fa-pencil-square-o"></i><span>&nbsp&nbsp Редактировать</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="input-group">
+                    <input type="text" placeholder="Логин" class="form-control">
+                    <div class="input-group-addon">Логин</div>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" readonly value="1.08.2016" placeholder="Дата" class="form-control readonly">
+                    <div class="input-group-addon readonly">Дата</div>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" readonly value="7 Дней" placeholder="Стаж" class="form-control readonly">
+                    <div class="input-group-addon readonly">Стаж</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="footer_left">
+              <p class="text-left">&copy Trader inc.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2"><a href="#">О нас</a></div>
+              <div class="col-md-2"><a href="#">Тарифы</a></div>
+              <div class="col-md-2"><a href="#">Правила</a></div>
+              <div class="col-md-2"><a href="#">FAQ</a></div>
+              <div class="col-md-2"><a href="#">Отзывы</a></div>
+              <div class="col-md-2"><a href="#">Контакты</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

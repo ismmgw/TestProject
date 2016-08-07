@@ -1,3 +1,4 @@
+/*=======================================MAIN=====================================*/
 * {
     font-family: Ubuntu;
     font-style: normal;
@@ -53,7 +54,7 @@ p{
     background: linear-gradient(to top, #ff6300, #ffc600);
     outline: none;
 }
-/*------------------------HEADER----------------------------*/
+/*=========================================HEADER=================================*/
 .head_row{
     padding-top: 35px;
     padding-bottom: 35px;
@@ -63,7 +64,9 @@ p{
 }
 .head_1{
     padding: 0 0 0 40px;
-
+}
+.head_1 h1{
+    display: none;
 }
 .head_4 {
     padding: 25px 0 0 0;
@@ -79,7 +82,7 @@ p{
     color: #ff7800;
     text-decoration: none;
 }
-/*----------------------NAV_BAR--------------------------*/
+/*-------------------------NAV_BAR--------------------------*/
 nav {
     background: #ff7800;
     color: white;
@@ -108,19 +111,13 @@ nav a:focus:hover{
     color: #ffffff;
 }
 @media (min-width: 768px) {
-    .col-md-1 .left-cols,
-    .col-sm-1 .left-cols,
-    .col-lg-1 .left-cols {
+    .six_row .col-md-1 {
         width: 100%;
         *width: 100%;
     }
 }
 @media (min-width: 992px) {
-    .six_row .col-md-1,
-    .six_row .col-sm-1,
-    .six_row .col-lg-1 {
-        /*width: 14.285714285714285714285714285714%;*/
-        /**width: 14.285714285714285714285714285714%;*/
+    .six_row .col-md-1 {
         width: 16.666666667%;
         *width: 16.666666667%;
     }
@@ -150,6 +147,7 @@ nav a:focus:hover{
     color: #ff7800;
 }
 /*-------------------------popup----------------------------*/
+/*========================================INDEX===================================*/
 .popup{
     border-radius: 10px;
 }
@@ -197,8 +195,7 @@ nav a:focus:hover{
 .icon_text_bot{
     text-align:left;
 }
-/*-------------------------TARIFF--------------------------*/
-
+/*--------------------------tariff--------------------------*/
 .tariff_head{
     margin: 0 auto;
     height: 0px;
@@ -225,13 +222,13 @@ nav a:focus:hover{
     color: #ff7800;
     text-decoration: none;
 }
-/*---------------------applet_layout------------------*/
+/*------------------------applet_layout---------------------*/
 /*-------for slider--------!
 ui-slider ui-slider-handle
 ui-widjet-contant
 */
 .applet_layout{
-    background: #cccccc;
+    background: #dddddd;
     padding-top: 50px;
 }
 .applet {
@@ -300,7 +297,7 @@ ui-widjet-contant
     text-decoration: underline;
     color: white;
 }
-/*----------------advantage------------------*/
+/*--------------------------advantage-----------------------*/
 .advantage{
     background: #f0f0f0;
 }
@@ -310,7 +307,7 @@ ui-widjet-contant
 .advantage_padding_30{
     padding-top: 30px;
 }
-/*----------------feedback-------------------*/
+/*--------------------------feedback------------------------*/
 .feedback {
     background: #f0f0f0;
     z-index: 1020;
@@ -372,7 +369,7 @@ ui-widjet-contant
     overflow: hidden;
     box-shadow: 0px -74px 49px -47px #f0f0f0 inset;
 }
-/*.feedback_col_text p{*/
+/*.feedback_col_text p{       shadow on text */
     /*background: white;*/
     /*padding: 10px 10px 10px 15px;*/
     /*position:relative;*/
@@ -412,7 +409,7 @@ ui-widjet-contant
 .feedback_bot{
     margin-bottom: 30px;
 }
-/*----------------bottom_form------------------*/
+/*---------------------------bottom_form--------------------*/
 .bottom_form{
     background: white;
     padding: 10px 0px 0px 0px;
@@ -430,7 +427,102 @@ ui-widjet-contant
     font-weight: 600;
     font-size: 1.6em;
 }
-/*-------------------FOOTER---------------------*/
+/*======================================PERSONAL_AREA=============================*/
+.personal_head{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    position: relative;
+    z-index:99;
+}
+
+.personal_head div h2 {
+    font-weight: 700;
+    padding: 30px 0 25px 20px;
+}
+.personal_layout{
+    background: #dddddd;
+    padding: 40px 5px 40px 5px;
+}
+/*----------------------personal_navigation-----------------*/
+@media (min-width: 768px) {
+    .two-cols .col-md-3 {
+        width: 100%;
+        *width: 100%;
+    }
+    .two-cols .col-md-9 {
+        width: 100%;
+        *width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .two-cols .col-md-3 {
+        width: 22%;
+        *width: 22%;
+    }
+    .two-cols .col-md-9 {
+        width: 78%;
+        *width: 78%;
+    }
+}
+.personal_nav{
+    background: #ffffff;
+    padding: 25px 0 20px 0;
+    border-radius: 10px;
+
+}
+.personal_nav ul{
+    padding: 0;
+    text-align: left;
+}
+.personal_nav ul li{
+    list-style-type: none;
+    padding: 8px 5px 8px 0;
+
+}
+.personal_nav ul li p{
+    padding: 0 0 0 10px;
+    color: #000;
+    display: block;
+    font-weight: 700;
+    font-size: 1.3em;
+    border-left: 4px solid #ff7800;
+}
+.personal_nav ul li a{
+    padding: 0 0 0 10px;
+    color: #5B5B5B;
+    display: block;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+}
+.personal_nav ul li a:hover{
+    color: #000;
+    border-color: #ff7800;
+}
+/*--------------------------USER_FORM----------------------*/
+.user_photo{
+    font-size: 100px;
+    color: #aaaaaa;
+}
+.user_form .input-group{
+    margin: 0 0 15px 0;
+}
+.user_form .input-group-addon{
+    background: #fff;
+}
+.user_form .input-group-addon.readonly{
+    background: #eee;
+}
+/*.user_form .input-group-addon:active, .user_form .input-group-addon:focus{*/
+    /*!*box-shadow: inset 0 1px 1px rgba(0,0,0,.075);*!*/
+    /*box-shadow: none;*/
+/*}*/
+.user_form .form-control{
+    border-right-color: transparent;
+}
+.user_btn{
+    border: 1px dashed #555555;
+}
+/*=======================================FOOTER===================================*/
 footer{
     background: #f0f0f0;
     padding: 25px 0px;
